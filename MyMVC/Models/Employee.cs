@@ -13,6 +13,7 @@ namespace MyMVC.Models
         public string Name { set; get; }
         public string Gender { set; get; }
         public string City { set; get; }
+        public Int64 DepartmentId { set; get; }
 
     }
 }

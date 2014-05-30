@@ -12,10 +12,10 @@ namespace MyMVC.Controllers
         //
         // GET: /Employee/
 
-        public ActionResult Index()
+        public ActionResult Index(int id)
         {
             EmployeeContext context = new EmployeeContext();
-            List<Employee> employees = context.Employees.ToList();
+            List<Employee> employees = context.Employees.Where(emp => emp.DepartmentId == id).ToList();
             return View(employees);
         }
 
