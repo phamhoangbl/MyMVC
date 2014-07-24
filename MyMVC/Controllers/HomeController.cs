@@ -9,7 +9,11 @@ namespace MyMVC.Controllers
 {
     public class HomeController : Controller
     {
-        //
-        // GET: /Home/
+        public ViewResult Index()
+        {
+            //ViewData
+            ViewData["Contries"] = new List<String>() { "Us", "VietName", "Autrialia", "Singapore" };
+            return View();
+        }
 	}
 }

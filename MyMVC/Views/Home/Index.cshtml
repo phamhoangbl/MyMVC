@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Home</h2>
+<ul>
+    @foreach(var s in (List<String>) ViewData["Contries"])
+    { 
+    <li> @s </li>
+    }
+</ul>
